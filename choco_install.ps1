@@ -14,6 +14,7 @@ choco install qbittorrent -y
 #choco install utorrent -y
 choco install aimp -y
 choco install telegram -y
+choco install slack -y
 choco install powershell-core -y
 #choco install powershell.portable -y
 choco install 7zip -y
