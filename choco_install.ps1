@@ -45,7 +45,7 @@ choco install puntoswitcher -y
 
 
 ############################################################   backup
-#choco install choco-package-list-backup
+choco install choco-package-list-backup
 #choco upgrade choco-package-list-backup
 #choco install packages.config -y
 ##### delete
