@@ -1,6 +1,6 @@
 > This is the main scripts for set up desktop environment on Linux and Windows. Enjoy it
 
-### Installation for [choco_install.ps1](https://github.com/greenblacked/seven/blob/master/choco_install.ps1 "choco_install.ps1")
+### Installation for Windows by [choco_install.ps1](https://github.com/greenblacked/seven/blob/master/choco_install.ps1 "choco_install.ps1")
 First of all you need to downaload the script 
 ```sh
 https://raw.githubusercontent.com/greenblacked/seven/master/choco_install.ps1
