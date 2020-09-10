@@ -45,11 +45,10 @@ choco install puntoswitcher -y
 #choco install steam
 
 
-############################################################   backup
-choco install choco-package-list-backup
-#choco upgrade choco-package-list-backup
-#choco install packages.config -y
-##### delete
-#choco uninstall имя_пакета
+############################################################  for  backup ###########################################################################
+choco install choco-package-list-backup # creating a backup list of all installed packages
+#choco install packages.config -y # another one tool for backups
+#choco uninstall имя_пакета # for delete packages
 
-choco list --local-only
+choco list --local-only # for list of all packages
+cup all -y # update all package without accept, you can delete the option "-y", that permit tp access again
