@@ -7,7 +7,7 @@ wget "https://raw.githubusercontent.com/greenblacked/seven/master/choco_install.
 ```
 ### And run it in powershell with admin access
 ```ps1
-PS C:\Users\User\Downloads>  .\choco_install.ps1 .\choco_install.ps1
+PS C:\Users\User\Downloads> .\choco_install.ps1
 ```
 ### After seccusfull setup you can select the next several options:
 ```ps1
