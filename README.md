@@ -11,3 +11,14 @@ https://raw.githubusercontent.com/greenblacked/seven/master/choco_install.ps1
 cup all -y  # for update all of yours packages
 choco uninstall [package_name] # for delete the package
 choco list --local-only # discribe all installed package
+```
+
+### Installation for linux by [install_Env.sh](https://github.com/greenblacked/seven/blob/master/install_Env.sh "install_Env.sh")
+First of all you need to downaload the script 
+```sh
+$ wget https://raw.githubusercontent.com/greenblacked/seven/master/install_Env.sh
+```
+#### And open it in terminal with sudo access
+```sh
+$ sudo sh install_Env.sh
+```
