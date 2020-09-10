@@ -14,6 +14,8 @@ wget "https://raw.githubusercontent.com/greenblacked/seven/master/choco_install.
 cup all -y  # for update all of yours packages
 choco uninstall $package_name # for delete the package
 choco list --local-only # discribe all installed package
+choco install choco-package-list-backup # creating a backup list of all installed packages
+choco install packages.config -y # another one tool for backups
 ```
 
 ### Installation for linux by [install_Env.sh](https://github.com/greenblacked/seven/blob/master/install_Env.sh "install_Env.sh")
