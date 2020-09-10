@@ -3,11 +3,11 @@
 ### Installation for Windows by [choco_install.ps1](https://github.com/greenblacked/seven/blob/master/choco_install.ps1 "choco_install.ps1")
 First of all you need to downaload the script 
 ```ps1
-https://raw.githubusercontent.com/greenblacked/seven/master/choco_install.ps1
+wget "https://raw.githubusercontent.com/greenblacked/seven/master/choco_install.ps1" -outfile "choco_install.ps1"
 ```
 ### And run it in powershell with admin access
 ```ps1
-PS C:\WINDOWS\system32> ./choco_install.ps1
+PS C:\WINDOWS\system32> .\choco_install.ps1
 ```
 ### After seccusfull setup you can select the next several options:
 ```ps1
