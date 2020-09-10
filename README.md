@@ -5,7 +5,10 @@ First of all you need to downaload the script
 ```sh
 https://raw.githubusercontent.com/greenblacked/seven/master/choco_install.ps1
 ```
-### And open it in powershell with admin access
+### And run it in powershell with admin access
+```sh
+PS C:\WINDOWS\system32> ./choco_install.ps1
+```
 ### After seccusfull setup you can select the next several options:
 ```sh
 cup all -y  # for update all of yours packages
