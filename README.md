@@ -2,15 +2,15 @@
 
 ### Installation for Windows by [choco_install.ps1](https://github.com/greenblacked/seven/blob/master/choco_install.ps1 "choco_install.ps1")
 First of all you need to downaload the script 
-```sh
+```ps1
 https://raw.githubusercontent.com/greenblacked/seven/master/choco_install.ps1
 ```
 ### And run it in powershell with admin access
-```sh
+```ps1
 PS C:\WINDOWS\system32> ./choco_install.ps1
 ```
 ### After seccusfull setup you can select the next several options:
-```sh
+```ps1
 cup all -y  # for update all of yours packages
 choco uninstall [package_name] # for delete the package
 choco list --local-only # discribe all installed package
