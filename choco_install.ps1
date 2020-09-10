@@ -27,6 +27,9 @@ choco install tortoisegit -y
 choco install conemu -y
 choco install adobereader -y
 choco install puntoswitcher -y
+# choco install paint.net -y
+# choco install tor-browser -y
+# choco install phpstorm -y
 # choco install pycharm-community -y
 # choco install googlechrome -y
 # choco install powershell.portable -y
@@ -38,4 +41,4 @@ choco install puntoswitcher -y
 # choco install wireshark -y
 # choco install nmap
 # choco install steam
-
+choco list --local-only
