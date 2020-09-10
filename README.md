@@ -1,4 +1,4 @@
-> ## This is the main scripts for set up desktop environment on Linux and Windows. Enjoy it
+> ## This is the main scripts for setting up a desktop environment on Linux and Windows. Enjoy it
 
 ### Installation for Windows by [choco_install.ps1](https://github.com/greenblacked/seven/blob/master/choco_install.ps1 "choco_install.ps1")
 First of all you need to downaload the script 
@@ -9,11 +9,11 @@ wget "https://raw.githubusercontent.com/greenblacked/seven/master/choco_install.
 ```ps1
  .\choco_install.ps1
 ```
-### After seccusfull setup you can select the next several options:
+### After a successful setup you can select the next several options:
 ```ps1
 cup all -y  # for update all of yours packages
 choco uninstall $package_name # for delete the package
-choco list --local-only # discribe all installed package
+choco list --local-only # describe all installed package
 choco install choco-package-list-backup # creating a backup list of all installed packages
 choco install packages.config -y # another one tool for backups
 ```
@@ -23,7 +23,7 @@ First of all you need to downaload the script
 ```sh
 $ wget https://raw.githubusercontent.com/greenblacked/seven/master/install_Env.sh
 ```
-#### And open it in terminal with sudo access
+#### And open it in the terminal with sudo access
 ```sh
 $ sudo sh install_Env.sh
 ```
