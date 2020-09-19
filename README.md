@@ -9,6 +9,12 @@ wget "https://raw.githubusercontent.com/greenblacked/seven/master/choco_install.
 ```ps1
  .\choco_install.ps1
 ```
+
+>### Also, if you need to install additional package you can to downaload the another script for windows, but before use it, please read it, you can find it by the following cmd
+
+```ps1
+wget "https://raw.githubusercontent.com/greenblacked/seven/master/choco_install_pro_tools.ps1" -outfile "choco_install.ps1"
+```
 ### After a successful setup you can select the next several options:
 ```ps1
 cup all -y  # for update all of yours packages
