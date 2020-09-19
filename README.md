@@ -1,4 +1,6 @@
-> ## This is the main scripts for setting up a desktop environment on Linux and Windows. Enjoy it
+<p align="center">
+<h2>This is the main scripts for setting up a desktop environment on Linux and Windows. Enjoy it </h2>
+</p>
 
 ### Installation for Windows by [choco_install.ps1](https://github.com/greenblacked/seven/blob/master/choco_install.ps1 "choco_install.ps1")
 First of all you need to downaload the script 
