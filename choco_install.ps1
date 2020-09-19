@@ -6,6 +6,7 @@ choco install googlechrome -y
 # choco install chromium -y
 choco install adblockpluschrome -y
 choco install qbittorrent -y # torrent client
+choco install fsviewer -y # FastStone Image Viewer
 # choco install spotify -y
 choco install calibre -y # reader
 # choco install puntoswitcher -y # switcher for language
