@@ -2,6 +2,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 cinst pester -version 2.0.2
 
 choco install firefox -y 
+choco install adblockplus-firefox -y
 choco install chromium -y
 choco install adblockpluschrome -y
 choco install fsviewer -y
