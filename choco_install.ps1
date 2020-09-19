@@ -11,28 +11,35 @@ choco install doublecmd -y # file manager
 choco install qbittorrent -y # torrent client
 choco install spotify -y
 choco install calibre -y # reader
+choco install filezilla.server -y # free FTP solution
 choco install wget -y
 choco install mobaxterm -y
 choco install jq -y
 choco install openvpn -y
+choco install recuva -y # recovers files deleted from your Windows computer
 choco install puntoswitcher -y # switcher for language
 choco install everything -y # search engine
 choco install aimp -y 
+choco install msiafterburner -y
 choco install libreoffice-fresh -y 
 choco install jre8 # java engine
+choco install openjdk8 -y
 choco install slack -y
 choco install powershell-core -y
 choco install 7zip -y
 choco install skype -y
 choco install zoom -y
+choco install viber -y
 choco install telegram -y
 choco install microsoft-teams.install -y
+choco install skypeforbusiness -y
 choco install git -y
 choco install github-desktop -y
 choco install awscli -y
 choco install azure-cli -y
 choco install jdk8 -y
 choco install notepadplusplus -y
+choco install lightshot -y # take a customizable screenshot
 choco install putty 
 choco install keepass -y
 # choco install keepass-keepasshttp -y
@@ -44,6 +51,7 @@ choco install sublimetext3 -y
 choco install virtualbox -y
 choco install vagrant -y
 choco install vscode -y
+choco install vscode-icons -y
 choco install vscode-powershell -y
 choco install tortoisegit -y
 choco install conemu -y
@@ -52,6 +60,8 @@ choco install google-backup-and-sync -y
 choco install winbox -y
 choco install pgadmin4 -y
 choco install checksum -y # checksum validator
+# choco install screenpresso -y # screen recorder
+# choco install kodi -y # video manager
 # choco install packer -y
 # choco install gpu-z -y
 # choco install brackets -y
@@ -64,6 +74,7 @@ choco install checksum -y # checksum validator
 # choco install dropbox -y
 # choco install malwarebytes -y
 # choco install ccleaner -y
+# choco install ccleaner.portable
 # choco install gimp -y
 # choco install nodejs.install -y
 # choco install python2 -y
