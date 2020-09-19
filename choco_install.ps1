@@ -4,6 +4,7 @@ cinst pester -version 2.0.2
 choco install firefox -y 
 choco install chromium -y
 choco install adblockpluschrome -y
+choco install fsviewer -y
 choco install vivaldi -y
 choco install unchecky -y # Unchecky aims to keep potentially unwanted programs out of your computer
 choco install doublecmd -y # file manager
@@ -50,7 +51,9 @@ choco install adobereader -y
 choco install google-backup-and-sync -y
 choco install winbox -y
 choco install pgadmin4 -y
+choco install checksum -y # checksum validator
 # choco install packer -y
+# choco install gpu-z -y
 # choco install brackets -y
 # choco install lastpass -y
 # choco install brave -y
