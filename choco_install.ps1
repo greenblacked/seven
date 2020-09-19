@@ -12,7 +12,7 @@ choco install calibre -y # reader
 # choco install puntoswitcher -y # switcher for language
 choco install aimp -y 
 # choco install libreoffice-fresh -y 
-choco install jre8 # java engine
+choco install jre8 -y # java engine
 choco install openjdk8 -y
 # choco install slack -y
 choco install 7zip -y
