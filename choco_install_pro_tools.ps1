@@ -60,7 +60,7 @@ choco install adobereader -y
 choco install google-backup-and-sync -y
 choco install winbox -y
 choco install pgadmin4 -y
-choco install checksum -y # checksum validator
+# choco install checksum -y # checksum validator
 # choco install screenpresso -y # screen recorder
 # choco install kodi -y # video manager
 # choco install packer -y
