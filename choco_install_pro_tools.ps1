@@ -5,7 +5,7 @@ choco install firefox -y
 choco install adblockplus-firefox -y
 choco install chromium -y
 choco install adblockpluschrome -y
-choco install fsviewer -y
+choco install fsviewer -y # FastStone Image Viewer
 choco install vivaldi -y
 choco install unchecky -y # Unchecky aims to keep potentially unwanted programs out of your computer
 choco install doublecmd -y # file manager
@@ -23,7 +23,7 @@ choco install everything -y # search engine
 choco install aimp -y 
 choco install msiafterburner -y
 choco install libreoffice-fresh -y 
-choco install jre8 # java engine
+choco install jre8 -y # java engine
 choco install openjdk8 -y
 choco install slack -y
 choco install powershell-core -y
@@ -45,7 +45,7 @@ choco install putty
 choco install keepass -y
 # choco install keepass-keepasshttp -y
 # choco install keepassxc -y
-choco install 1password
+choco install 1password -y
 choco install opera -y
 choco install k-litecodecpackfull -y
 choco install sublimetext3 -y
@@ -68,14 +68,14 @@ choco install checksum -y # checksum validator
 # choco install brackets -y
 # choco install lastpass -y
 # choco install brave -y
-choco install rufus -y
+# choco install rufus -y
 # choco install opera -y
 # choco install cmake -y
-choco install sublimetext3 -y
+# choco install sublimetext3 -y
 # choco install dropbox -y
 # choco install malwarebytes -y
 # choco install ccleaner -y
-choco install ccleaner.portable
+# choco install ccleaner.portable
 # choco install gimp -y
 # choco install nodejs.install -y
 # choco install python2 -y
