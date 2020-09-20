@@ -42,7 +42,7 @@ choco install azure-cli -y
 choco install jdk8 -y
 choco install notepadplusplus -y
 choco install lightshot -y # take a customizable screenshot
-choco install putty 
+choco install putty -y
 choco install keepass -y
 # choco install keepass-keepasshttp -y
 # choco install keepassxc -y
