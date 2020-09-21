@@ -61,6 +61,7 @@ choco install adobereader -y
 choco install google-backup-and-sync -y
 choco install winbox -y
 choco install pgadmin4 -y
+choco install ccleaner.portable -y
 # choco install checksum -y # checksum validator
 # choco install screenpresso -y # screen recorder
 # choco install kodi -y # video manager
@@ -76,7 +77,6 @@ choco install pgadmin4 -y
 # choco install dropbox -y
 # choco install malwarebytes -y
 # choco install ccleaner -y
-# choco install ccleaner.portable
 # choco install gimp -y
 # choco install nodejs.install -y
 # choco install python2 -y
