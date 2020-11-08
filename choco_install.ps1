@@ -38,5 +38,8 @@ choco install ccleaner.portable
 choco install steam -y
 # choco install epicgameslauncher -y
 # choco install origin -y
+# choco install vagrant -y
+# choco install virtualbox -y
+# choco install wireshark -y
 
 choco list --local-only
