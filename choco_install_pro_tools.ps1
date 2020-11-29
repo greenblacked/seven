@@ -27,7 +27,7 @@ choco install puntoswitcher -y # switcher for language
 choco install everything -y # search engine
 choco install aimp -y 
 choco install msiafterburner -y
-choco install libreoffice-fresh -y 
+# choco install libreoffice-fresh -y 
 choco install jre8 -y # java engine
 choco install openjdk8 -y
 choco install slack -y
@@ -37,7 +37,7 @@ choco install zoom -y
 choco install viber -y
 choco install telegram -y
 choco install microsoft-teams.install -y
-choco install skypeforbusiness -y
+# choco install skypeforbusiness -y
 choco install git -y
 choco install github-desktop -y
 choco install awscli -y
