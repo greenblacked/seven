@@ -1,19 +1,20 @@
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 cinst pester -version 2.0.2
 
-
+choco install choco-package-list-backup -y
+choco install 7zip -y
 choco install firefox -y 
 choco install adblockplus-firefox -y
 choco install chromium -y
 choco install adblockpluschrome -y
 choco install fsviewer -y # FastStone Image Viewer
 choco install vivaldi -y
-choco install unchecky -y # Unchecky aims to keep potentially unwanted programs out of your computer
+# choco install unchecky -y # Unchecky aims to keep potentially unwanted programs out of your computer
 choco install doublecmd -y # file manager
 choco install qbittorrent -y # torrent client
 choco install spotify -y
 choco install calibre -y # reader
-choco install filezilla.server -y # free FTP solution
+# choco install filezilla.server -y # free FTP solution
 choco install wget -y
 choco install mobaxterm -y
 choco install jq -y
@@ -28,7 +29,6 @@ choco install jre8 -y # java engine
 choco install openjdk8 -y
 choco install slack -y
 choco install powershell-core -y
-choco install 7zip -y
 choco install skype -y
 choco install zoom -y
 choco install viber -y
@@ -47,7 +47,7 @@ choco install keepass -y
 # choco install keepass-keepasshttp -y
 # choco install keepassxc -y
 choco install 1password -y
-choco install opera -y
+# choco install opera -y
 choco install k-litecodecpackfull -y
 choco install sublimetext3 -y
 choco install virtualbox -y
@@ -60,7 +60,7 @@ choco install conemu -y
 choco install adobereader -y
 choco install google-backup-and-sync -y
 choco install winbox -y
-choco install pgadmin4 -y
+# choco install pgadmin4 -y
 choco install ccleaner.portable -y
 # choco install checksum -y # checksum validator
 # choco install screenpresso -y # screen recorder
@@ -73,25 +73,26 @@ choco install ccleaner.portable -y
 # choco install rufus -y
 # choco install opera -y
 # choco install cmake -y
-# choco install sublimetext3 -y
+choco install sublimetext3 -y
 # choco install dropbox -y
 # choco install malwarebytes -y
-# choco install ccleaner -y
+choco install ccleaner -y
 # choco install gimp -y
 # choco install nodejs.install -y
 # choco install python2 -y
 # choco install paint.net -y
 # choco install tor-browser -y
 # choco install phpstorm -y
-# choco install pycharm-community -y
-# choco install googlechrome -y
+choco install pycharm-community -y
+choco install googlechrome -y
 # choco install powershell.portable -y
-# choco install atom -y
+choco install atom -y
 # choco install putty.portable -y
 # choco install docker -y
 # choco install utorrent -y
-# choco install wireshark -y
-# choco install nmap -y
+choco install wireshark -y
+choco install nmap -y
 # choco install steam -y
 # choco install cdburnerxp -y
+# choco install backupvault -y #backup app
 choco list --local-only
