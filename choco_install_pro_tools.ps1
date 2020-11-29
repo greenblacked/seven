@@ -3,9 +3,12 @@ cinst pester -version 2.0.2
 
 choco install choco-package-list-backup -y
 choco install 7zip -y
+choco install googlechrome -y
+# choco install vnc-viewer -y
+choco install tightvnc -y
 choco install firefox -y 
 choco install adblockplus-firefox -y
-choco install chromium -y
+# choco install chromium -y
 choco install adblockpluschrome -y
 choco install fsviewer -y # FastStone Image Viewer
 choco install vivaldi -y
@@ -62,7 +65,7 @@ choco install google-backup-and-sync -y
 choco install winbox -y
 # choco install pgadmin4 -y
 choco install ccleaner.portable -y
-# choco install checksum -y # checksum validator
+choco install checksum -y # checksum validator
 # choco install screenpresso -y # screen recorder
 # choco install kodi -y # video manager
 # choco install packer -y
@@ -70,7 +73,7 @@ choco install ccleaner.portable -y
 # choco install brackets -y
 # choco install lastpass -y
 # choco install brave -y
-# choco install rufus -y
+choco install rufus -y
 # choco install opera -y
 # choco install cmake -y
 choco install sublimetext3 -y
@@ -84,7 +87,6 @@ choco install ccleaner -y
 # choco install tor-browser -y
 # choco install phpstorm -y
 choco install pycharm-community -y
-choco install googlechrome -y
 # choco install powershell.portable -y
 choco install atom -y
 # choco install putty.portable -y
