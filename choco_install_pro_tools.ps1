@@ -1,7 +1,7 @@
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 cinst pester -version 2.0.2
 
-choco install choco-package-list-backup -y
+choco install choco-package-list-backup -y #for backup
 choco install 7zip -y
 choco install googlechrome -y
 # choco install vnc-viewer -y
