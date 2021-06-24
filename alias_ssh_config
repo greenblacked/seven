@@ -1,0 +1,32 @@
+#######################################################################################
+###############################
+#Host [git.domain.com]
+#User [user]
+#Port [number]
+#IdentitiesOnly=yes
+#PreferredAuthentications publickey
+#PasswordAuthentication no
+# CMD
+#IdentityFile C:\Users\[User]\.ssh\[name_of_PRIVATE_key_file]
+# BASH
+#IdentityFile /c/Users/[User]/.ssh/[name_of_PRIVATE_key_file]
+###########or####################################################
+#Host my-ssh-host
+  #HostName 10.0.0.5
+  #Port 22
+  #User myuser
+	#IdentityFile ~/.ssh/id_ed25519_myuser
+	#IdentitiesOnly yes
+
+########### INTERNAL PROJECTS #############
+include ~/.ssh/internal/*
+
+########### EXTERNAL PROJECTS #############
+include ~/.ssh/external/*
+
+########### PERSONAL PROJECTS #############
+include ~/.ssh/personal/*
+#############################################
+
+Host gitlab.com
+  UpdateHostKeys no
