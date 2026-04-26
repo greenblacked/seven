@@ -4,7 +4,7 @@ This repository contains install scripts and helper configuration for quickly pr
 
 ## Features
 
-- Windows setup with Chocolatey package installation.
+- Windows setup with Chocolatey package installation (shared helpers, strict exit-code checks).
 - Extended Windows setup for additional developer and power-user tools.
 - Bash helper functions for daily Linux terminal usage.
 - Windows Terminal configuration with PowerShell, Command Prompt, Git Bash, WSL, and Azure Cloud Shell profiles.
@@ -16,6 +16,7 @@ This repository contains install scripts and helper configuration for quickly pr
 
 | File | Description |
 | --- | --- |
+| `choco_install_common.ps1` | Shared Chocolatey bootstrap and install helpers (dot-sourced by the installers below). |
 | `choco_install.ps1` | Base Windows installer with common desktop packages. |
 | `choco_install_pro_tools.ps1` | Extended Windows installer with additional admin, development, and productivity tools. |
 | `bashrc` | Bash helper functions for updates, Git prompts, project initialization, and system info. |
@@ -31,33 +32,42 @@ Recommended checks:
 - Remove packages you do not need.
 - Confirm package names are still available in Chocolatey or your Linux package repositories.
 - Run Windows scripts from an elevated PowerShell session.
+- When using the Windows installers, keep `choco_install_common.ps1` in the **same folder** as `choco_install.ps1` or `choco_install_pro_tools.ps1` (clone the repo or download both files).
 - Source the Bash helper file instead of executing it directly.
 - Review MikroTik examples carefully before using them on a router.
 - Create a restore point or backup before using the extended setup script on a production machine.
 
+The Chocolatey bootstrap uses the official community install script over HTTPS. If you prefer to inspect it first, download [install.ps1](https://community.chocolatey.org/install.ps1) locally and run it from an elevated shell instead of relying on `Invoke-Expression` from the helper.
+
 ## Windows Installation
 
-Download the base Windows setup script:
+Download the shared helpers and the base installer into the **same directory**:
 
 ```ps1
-wget "https://raw.githubusercontent.com/greenblacked/seven/master/choco_install.ps1" -outfile "choco_install.ps1"
+$base = "https://raw.githubusercontent.com/greenblacked/seven/master"
+Invoke-WebRequest "$base/choco_install_common.ps1" -OutFile "choco_install_common.ps1"
+Invoke-WebRequest "$base/choco_install.ps1" -OutFile "choco_install.ps1"
 ```
 
-Run it in PowerShell as Administrator:
+Run the base script in PowerShell as Administrator from the folder where you saved the files (for example `cd ~\Downloads`):
 
 ```ps1
 .\choco_install.ps1
 ```
 
+If any `choco install` or the final `choco list` fails, the script stops and reports the exit code.
+
 ## Extended Windows Installation
 
-If you need additional packages, download the extended Windows script:
+Download the shared helpers (if you have not already) and the extended script:
 
 ```ps1
-wget "https://raw.githubusercontent.com/greenblacked/seven/master/choco_install_pro_tools.ps1" -outfile "choco_install_pro_tools.ps1"
+$base = "https://raw.githubusercontent.com/greenblacked/seven/master"
+Invoke-WebRequest "$base/choco_install_common.ps1" -OutFile "choco_install_common.ps1"
+Invoke-WebRequest "$base/choco_install_pro_tools.ps1" -OutFile "choco_install_pro_tools.ps1"
 ```
 
-Review it before running:
+Review the package list before running:
 
 ```ps1
 notepad .\choco_install_pro_tools.ps1
@@ -103,7 +113,11 @@ The included `settings.json` configures profiles for:
 - Ubuntu WSL
 - Azure Cloud Shell
 
-To use it, copy the settings into your Windows Terminal configuration after backing up your current settings.
+**Copy** is bound to **Ctrl+Shift+C** so **Ctrl+C** can send an interrupt to the shell. Adjust key bindings in your own `settings.json` if you prefer different shortcuts.
+
+WSL distro entries use machine-specific `guid` values. Treat this file as a template: after copying, compare with your live Windows Terminal `settings.json` (from **Settings → Open JSON file**) and merge profiles so GUIDs match distros actually installed on your PC.
+
+To use the template, copy the contents into your Windows Terminal configuration after backing up your current settings.
 
 Typical Windows Terminal settings location:
 
@@ -123,18 +137,21 @@ choco install choco-package-list-backup -y
 choco install packages.config -y
 ```
 
+On Chocolatey v2+, run `choco list --help` if flags or output differ from what you expect.
+
 ## Customization
 
-You can customize the setup by commenting or uncommenting package lines inside the scripts.
-
-For example:
+Edit the `$packages` array near the bottom of `choco_install.ps1` or `choco_install_pro_tools.ps1`. Comment out a line or remove an entry to skip that package:
 
 ```ps1
-# choco install virtualbox -y
-choco install vscode -y
+$packages = @(
+    '7zip',
+    # 'virtualbox',   # skipped
+    'vscode'
+)
 ```
 
-Lines starting with `#` are skipped. Remove the `#` to enable a package, or add `#` to disable one.
+Use a full-line comment (line starts with `#`) to skip an entry. Do not comment out the only item on a line in the middle of the array in a way that leaves two commas with nothing between them.
 
 ## MikroTik Wi-Fi Password Rotation
 
@@ -151,10 +168,11 @@ Before using it:
 ## Troubleshooting
 
 - If Chocolatey is not recognized, close and reopen PowerShell as Administrator.
-- If a package fails to install, run `choco search package-name` to confirm the current package name.
+- If a package fails to install, the installer stops: run `choco search package-name` to confirm the current package name, fix the list, and re-run (or install the failing package manually).
+- If you see errors about `choco_install_common.ps1`, ensure that file sits in the same directory as the installer you are running.
 - If Windows blocks script execution, run PowerShell as Administrator and check the execution policy.
 - If Bash helpers fail, source the file in Bash and confirm required tools are installed.
-- If WSL does not appear in Windows Terminal, confirm that the distro is installed with `wsl -l -v`.
+- If WSL does not appear in Windows Terminal, confirm that the distro is installed with `wsl -l -v` and that your `settings.json` profile `guid` matches the distro.
 
 ## Notes
 
